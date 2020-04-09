@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="my-home-work-project.main" target="1.8" />
       <module name="my-home-work-project.test" target="1.8" />
+      <module name="qa23_elenaVan.trello-web-tests.main" target="1.8" />
+      <module name="qa23_elenaVan.trello-web-tests.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

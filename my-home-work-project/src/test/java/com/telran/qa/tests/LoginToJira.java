@@ -23,9 +23,9 @@ public class LoginToJira {
 
     @Test
     public void testJiraLogin() {
-        type(By.name("os_username"), "elena");
+        type(By.name("os_username"), "vanyushkinelena");
 
-        type(By.name("os_password"), "1234");
+        type(By.name("os_password"), "felia161075");
 
         click(By.id("login"));
         String errorMessage = wd.findElement(By.id("usernameerror")).getText();
