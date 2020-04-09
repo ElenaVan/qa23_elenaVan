@@ -3,14 +3,15 @@ package com.qa.trello;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.openqa.selenium.By.*;
+import static org.openqa.selenium.By.xpath;
 
 public class BoardCreationTests {
     WebDriver wd;
@@ -20,7 +21,7 @@ public class BoardCreationTests {
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        wait = new WebDriverWait(wd,20);
+        wait = new WebDriverWait(wd,30);
         wd.manage().window().maximize();
         wd.navigate().to("https://trello.com/");
 
@@ -37,6 +38,7 @@ public class BoardCreationTests {
         //confirmLogin
         confirmLogin();
         //initBoardCreation
+        newBoardCreation("qwerty");
         //fillBoardForm
         //confirmBoardCreation
         //returnToHomePage
@@ -44,20 +46,28 @@ public class BoardCreationTests {
 
     }
 
+    public void newBoardCreation(String text) {
+        click(name("add"));
+        click(xpath("//span[contains(text(),'Create Board')]"));
+        type(cssSelector("input._23NUW98LaZfBpQ"), text);
+        click(cssSelector("button._3UeOvlU6B5KUnS"));
+    }
+
     public void confirmLogin() {
        // wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login"))).click();
-        click(By.id("login"));
+        click(id("login"));
     }
 
     public void fillloginForm(String userEmail, String password) {
-        type(By.name("user"), userEmail);
-        click(By.id("password"));
-        type(By.id("password"), password);
+        type(name("user"), userEmail);
+        click(id("password"));
+        type(id("password"), password);
     }
 
     public void initLogin() {
-        click(By.cssSelector("[href='/login']"));
+        click(cssSelector("[href='/login']"));
     }
+
 
     public void type(By locator, String text) {
         click(locator);
