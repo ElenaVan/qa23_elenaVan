@@ -21,7 +21,7 @@ public class BoardCreationTests {
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        wait = new WebDriverWait(wd,30);
+        wait = new WebDriverWait(wd,45);
         wd.manage().window().maximize();
         wd.navigate().to("https://trello.com/");
 
@@ -38,10 +38,11 @@ public class BoardCreationTests {
         //confirmLogin
         confirmLogin();
         //initBoardCreation
-        newBoardCreation("qwerty");
+        newBoardCreation("qa23");
         //fillBoardForm
         //confirmBoardCreation
         //returnToHomePage
+        click(name("house"));
 
 
     }
@@ -49,7 +50,7 @@ public class BoardCreationTests {
     public void newBoardCreation(String text) {
         click(name("add"));
         click(xpath("//span[contains(text(),'Create Board')]"));
-        type(cssSelector("input._23NUW98LaZfBpQ"), text);
+        type(cssSelector("input._23NUW98LaZfBpQ"),text);
         click(cssSelector("button._3UeOvlU6B5KUnS"));
     }
 
