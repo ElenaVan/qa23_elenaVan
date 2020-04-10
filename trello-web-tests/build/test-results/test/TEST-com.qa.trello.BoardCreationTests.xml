@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.qa.trello.BoardCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-09T19:06:29" hostname="MacBook-Pro-Irina.local" time="9.165">
+<testsuite name="com.qa.trello.BoardCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-09T19:31:12" hostname="MacBook-Pro-Irina.local" time="7.071">
   <properties/>
-  <testcase name="testBoardCreation" classname="com.qa.trello.BoardCreationTests" time="9.165">
-    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span color=&quot;light&quot; name=&quot;house&quot; class=&quot;_2BQG4yPMt5s_hu _2hgn5meZL7bJdx _1ctYJ9-gOV_hrm _3Xj1tqB73NcWn3&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (56, 20). Other element would receive the click: &lt;div class=&quot;_3gUubwRZDWaOF0 _2WhIqhRFBTG7Ry _2NubQcQM83YCVV&quot; role=&quot;dialog&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=81.0.4044.92)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-Irina.local', ip: 'fe80:0:0:0:1085:5e62:f7db:2478%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gy/c09sdzsx70q...}, goog:chromeOptions: {debuggerAddress: localhost:62027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5cb0ed45fc6f0d48e375f4f14f2c4c20" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span color=&quot;light&quot; name=&quot;house&quot; class=&quot;_2BQG4yPMt5s_hu _2hgn5meZL7bJdx _1ctYJ9-gOV_hrm _3Xj1tqB73NcWn3&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (56, 20). Other element would receive the click: &lt;div class=&quot;_3gUubwRZDWaOF0 _2WhIqhRFBTG7Ry _2NubQcQM83YCVV&quot; role=&quot;dialog&quot;&gt;...&lt;/div&gt;
+  <testcase name="testBoardCreation" classname="com.qa.trello.BoardCreationTests" time="7.071">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span color=&quot;light&quot; name=&quot;house&quot; class=&quot;_2BQG4yPMt5s_hu _2hgn5meZL7bJdx _1ctYJ9-gOV_hrm _3Xj1tqB73NcWn3&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (56, 20). Other element would receive the click: &lt;div class=&quot;_3gUubwRZDWaOF0 _2WhIqhRFBTG7Ry _2NubQcQM83YCVV&quot; role=&quot;dialog&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=81.0.4044.92)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-Irina.local', ip: 'fe80:0:0:0:1085:5e62:f7db:2478%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gy/c09sdzsx70q...}, goog:chromeOptions: {debuggerAddress: localhost:53213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 12cbb9132974b9c4753c5dcab5344210" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span color=&quot;light&quot; name=&quot;house&quot; class=&quot;_2BQG4yPMt5s_hu _2hgn5meZL7bJdx _1ctYJ9-gOV_hrm _3Xj1tqB73NcWn3&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (56, 20). Other element would receive the click: &lt;div class=&quot;_3gUubwRZDWaOF0 _2WhIqhRFBTG7Ry _2NubQcQM83YCVV&quot; role=&quot;dialog&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=81.0.4044.92)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro-Irina.local', ip: 'fe80:0:0:0:1085:5e62:f7db:2478%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gy/c09sdzsx70q...}, goog:chromeOptions: {debuggerAddress: localhost:62027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5cb0ed45fc6f0d48e375f4f14f2c4c20
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gy/c09sdzsx70q...}, goog:chromeOptions: {debuggerAddress: localhost:53213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12cbb9132974b9c4753c5dcab5344210
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -22,7 +22,8 @@ Session ID: 5cb0ed45fc6f0d48e375f4f14f2c4c20
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.qa.trello.BoardCreationTests.click(BoardCreationTests.java:81)
-	at com.qa.trello.BoardCreationTests.testBoardCreation(BoardCreationTests.java:45)
+	at com.qa.trello.BoardCreationTests.newBoardCreation(BoardCreationTests.java:54)
+	at com.qa.trello.BoardCreationTests.testBoardCreation(BoardCreationTests.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,29 +80,21 @@ Session ID: 5cb0ed45fc6f0d48e375f4f14f2c4c20
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 47522
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1586459186.125][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
-апр 09, 2020 10:06:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1586459187.500][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459187.601][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459187.936][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.226][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.327][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.444][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.545][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.646][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.748][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459188.869][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459189.049][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459189.151][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459189.379][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459189.481][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459189.582][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459197.166][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459197.267][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586459197.372][SEVERE]: Timed out receiving message from renderer: 0.100
+  <system-err><![CDATA[[1586460670.293][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460670.395][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.035][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.224][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.325][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.427][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.714][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460671.906][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.008][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.109][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.271][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.373][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.474][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.575][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460672.676][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586460678.218][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>

@@ -14,12 +14,11 @@ import static org.openqa.selenium.By.*;
 import static org.openqa.selenium.By.xpath;
 
 public class BoardCreationTests {
-    WebDriver wd;
+    WebDriver wd = new ChromeDriver();
     WebDriverWait wait;
 
     @BeforeMethod
     public void setUp() {
-        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         wait = new WebDriverWait(wd,45);
         wd.manage().window().maximize();
@@ -42,7 +41,7 @@ public class BoardCreationTests {
         //fillBoardForm
         //confirmBoardCreation
         //returnToHomePage
-        click(name("house"));
+      //  click(name("house"));
 
 
     }
@@ -52,6 +51,7 @@ public class BoardCreationTests {
         click(xpath("//span[contains(text(),'Create Board')]"));
         type(cssSelector("input._23NUW98LaZfBpQ"),text);
         click(cssSelector("button._3UeOvlU6B5KUnS"));
+        click(name("house"));
     }
 
     public void confirmLogin() {

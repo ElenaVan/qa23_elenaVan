@@ -2,7 +2,9 @@ package com.telran.qa.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,7 +17,7 @@ public class LoginToJira {
 
     @BeforeClass
     public void setUp() {
-        wd = new ChromeDriver();
+        wd = new ChromeDriver()
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         wd.navigate().to("http://jira.tel-ran.net/secure/Dashboard.jspa");
