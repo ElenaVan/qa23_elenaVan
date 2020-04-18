@@ -33,11 +33,24 @@ public class TestBase {
     }
 
     public void newBoardCreation(String text) {
+        initCreateBoard();
+        fillBoardForm(text);
+        confirmBoardCriation();
+
+    }
+
+    public void confirmBoardCriation() {
+        click(cssSelector("button._3UeOvlU6B5KUnS"));
+    }
+
+    public void fillBoardForm(String text) {
+        type(cssSelector("input._23NUW98LaZfBpQ"), text);
+        click(cssSelector("[name='check']"));
+    }
+
+    public void initCreateBoard() {
         click(name("add"));
         click(xpath("//span[contains(text(),'Create Board')]"));
-        type(cssSelector("input._23NUW98LaZfBpQ"), text);
-        click(cssSelector("button._3UeOvlU6B5KUnS"));
-        //click(name("house"));
     }
 
     public void confirmLogin() {
@@ -76,5 +89,43 @@ public class TestBase {
         initLogin();
         fillloginForm(email, password);
         confirmLogin();
+    }
+
+    public void permanentlyDeletBoard() {
+        click(cssSelector(".js-delete"));
+        confirm();
+    }
+
+    public void initBoardDeletionInBoardMenu() {
+        clickCloseBoardFromMoreMenu();
+        confirm();
+
+   }
+
+    public void confirm() {
+        click(cssSelector(".js-confirm "));
+    }
+
+    public void clickCloseBoardFromMoreMenu() {
+        click(cssSelector(".js-close-board"));
+    }
+
+    public void clickMoreButton() {
+        click(cssSelector(".js-open-more"));
+    }
+
+    public void openFirstPersonalBoard() {
+        click(xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+    }
+
+    public int getBoardsCount() {
+        return wd.findElements(xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
+    }
+    public void createBoard(){
+        initCreateBoard();
+        fillBoardForm("yy");
+        confirmBoardCriation();
+        returnToHomePage();
+
     }
 }
