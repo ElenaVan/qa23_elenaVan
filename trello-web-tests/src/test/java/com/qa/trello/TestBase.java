@@ -79,7 +79,7 @@ public class TestBase {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator)).click();
     }
 
-     @AfterMethod
+    @AfterMethod
     public void tearDown() {
         wd.quit();
 
@@ -100,7 +100,7 @@ public class TestBase {
         clickCloseBoardFromMoreMenu();
         confirm();
 
-   }
+    }
 
     public void confirm() {
         click(cssSelector(".js-confirm "));
@@ -119,13 +119,39 @@ public class TestBase {
     }
 
     public int getBoardsCount() {
-        return wd.findElements(xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
+        return wd.findElements(xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
     }
-    public void createBoard(){
+
+    public void createBoard() {
         initCreateBoard();
         fillBoardForm("yy");
         confirmBoardCriation();
         returnToHomePage();
+    }
+
+    public void fillForm(String nameOfTeam, By locatorTeamType) {
+        type(By.cssSelector("[class='_1CLyNodCAa-vQi']"), nameOfTeam);
+        click(By.id("teamTypeSelect"));
+        click(locatorTeamType);
 
     }
+
+    public void confirmTeamCreation() {
+        click(By.cssSelector("[type='submit']"));
+        click(By.cssSelector("[class='eg0KI5SqghoOFd']"));
+    }
+
+    public void initTeamCreation() {
+        click(By.cssSelector("[class='icon-add icon-sm _2aV_KY1gTq1qWc']"));
+    }
+
+
+
+    public void changeBackground(){
+        click(cssSelector(".js-change-background"));
+        click(cssSelector(".js-bg-photos"));
+        click(xpath("//div[@id='surface']//div[8]//span[1]"));
+    }
 }
+
+

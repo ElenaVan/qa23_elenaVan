@@ -8,9 +8,11 @@ import org.testng.annotations.Test;
 public class BoardDeletionTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
-        if(getBoardsCount()==0){
-            createBoard();
-        }
+
+            if(getBoardsCount()==0){
+                createBoard();
+            }
+
     }
     @Test
     public void testBoardDeletion() {
