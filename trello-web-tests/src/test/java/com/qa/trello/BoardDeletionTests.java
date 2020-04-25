@@ -5,15 +5,27 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static org.openqa.selenium.By.cssSelector;
+
 public class BoardDeletionTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
+        if(isOnBoardPage()){
+            click(cssSelector("[href$=boards]"));
+        }
 
-            if(getBoardsCount()==0){
-                createBoard();
-            }
+
+        if(getBoardsCount()==0){
+            createBoard();
+        }
 
     }
+
+    public boolean isOnBoardPage() {
+        String url = wd.getCurrentUrl();
+        return url.contains("boards");
+    }
+
     @Test
     public void testBoardDeletion() {
         int before = getBoardsCount();

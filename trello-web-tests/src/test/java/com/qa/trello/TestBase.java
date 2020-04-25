@@ -152,6 +152,8 @@ public class TestBase {
         click(cssSelector(".js-bg-photos"));
         click(xpath("//div[@id='surface']//div[8]//span[1]"));
     }
+
+
 }
 
 
