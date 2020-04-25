@@ -1,6 +1,5 @@
 package com.qa.trello;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,31 +10,31 @@ public class BoardDeletionTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
         if(isOnBoardPage()){
-            click(cssSelector("[href$=boards]"));
+            app.click(cssSelector("[href$=boards]"));
         }
 
 
-        if(getBoardsCount()==0){
-            createBoard();
+        if(app.getBoardsCount()==0){
+            app.createBoard();
         }
 
     }
 
     public boolean isOnBoardPage() {
-        String url = wd.getCurrentUrl();
+        String url = app.wd.getCurrentUrl();
         return url.contains("boards");
     }
 
     @Test
     public void testBoardDeletion() {
-        int before = getBoardsCount();
-        openFirstPersonalBoard();
-        clickMoreButton();
-        initBoardDeletionInBoardMenu();
+        int before = app.getBoardsCount();
+        app.openFirstPersonalBoard();
+        app.clickMoreButton();
+        app.initBoardDeletionInBoardMenu();
 
-        permanentlyDeletBoard();
-        returnToHomePage();
-        int after = getBoardsCount();
+        app.permanentlyDeletBoard();
+        app.returnToHomePage();
+        int after = app.getBoardsCount();
         System.out.println("was:" + before + " now: " + after);
         Assert.assertEquals(after, before - 1);
 
