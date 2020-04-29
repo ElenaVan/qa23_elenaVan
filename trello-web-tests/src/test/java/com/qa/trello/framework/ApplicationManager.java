@@ -1,0 +1,46 @@
+package com.qa.trello.framework;
+
+import com.qa.trello.framework.BoardHelper;
+import com.qa.trello.framework.SessionHelper;
+import com.qa.trello.framework.TeamHelper;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
+
+public class ApplicationManager {
+    WebDriver wd;
+
+    BoardHelper board;
+    TeamHelper team;
+    SessionHelper session;
+
+    public void init() {
+        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(wd, 45);
+        wd.manage().window().maximize();
+        wd.navigate().to("https://trello.com/");
+        session = new SessionHelper(wd);
+        session.login("vanyushkinelena@gmail.com", "felia161075");
+
+        board = new BoardHelper(wd);
+        team =  new TeamHelper(wd);
+
+    }
+
+    public void stop() {
+        wd.quit();
+    }
+
+    public BoardHelper getBoard() {
+        return board;
+    }
+
+    public TeamHelper getTeam() {
+        return team;
+    }
+
+    public SessionHelper getSession() {
+        return session;
+    }
+}
