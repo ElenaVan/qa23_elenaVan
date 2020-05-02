@@ -9,18 +9,27 @@ public class TeamHelper  {
     }
 
     public void fillForm(String nameOfTeam, By locatorTeamType) {
-        type(By.cssSelector("[class='_1CLyNodCAa-vQi']"), nameOfTeam);
+        type(By.cssSelector("[data-test-id=header-create-team-name-input]"), nameOfTeam);
         click(By.id("teamTypeSelect"));
-        click(locatorTeamType);
-
+        click(By.cssSelector("[data-test-id^=header-create-team-type] li"));
     }
+
+
+}
 
     public void confirmTeamCreation() {
         click(By.cssSelector("[type='submit']"));
         click(By.cssSelector("[class='eg0KI5SqghoOFd']"));
     }
 
-    public void initTeamCreation() {
-        click(By.cssSelector("[class='icon-add icon-sm _2aV_KY1gTq1qWc']"));
-    }
-}
+
+public void inviteTeamLater() {
+        if (isElementPresent(By.cssSelector("[data-test-id=show-later-button]"))) {
+        click(By.cssSelector("[data-test-id=show-later-button]"));
+        }
+        }
+
+public void openTeamSettings() {
+        openFirstTeam();
+        openSettings();
+        }
