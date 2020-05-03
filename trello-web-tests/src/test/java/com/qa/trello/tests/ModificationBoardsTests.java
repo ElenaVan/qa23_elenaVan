@@ -10,9 +10,13 @@ import org.testng.annotations.Test;
 public class ModificationBoardsTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
+        if(!app.getBoard().isOnBoardsPage()){
+            app.getBoard().openBoardsPage();
+        }
         if(app.getBoard().getBoardsCount()==0){
             app.getBoard().createBoard();
         }
+    }
     }
     @Test
     public void modifiBoards(){
