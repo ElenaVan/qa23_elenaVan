@@ -20,7 +20,7 @@ public class ApplicationManager {
     SessionHelper session;
     String browser;
 
-    public ApplicationManager(String browser) {
+    public ApplicationManager(String browser) {}
 
 
     public void init() throws InterruptedException {

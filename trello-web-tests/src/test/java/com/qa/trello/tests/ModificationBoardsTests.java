@@ -17,7 +17,7 @@ public class ModificationBoardsTests extends TestBase {
             app.getBoard().createBoard();
         }
     }
-    }
+
     @Test
     public void modifiBoards(){
    app.getBoard().openFirstPersonalBoard();

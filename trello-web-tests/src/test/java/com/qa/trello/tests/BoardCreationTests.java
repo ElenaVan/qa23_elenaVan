@@ -11,11 +11,12 @@ public class BoardCreationTests extends TestBase {
         if (!app.getBoard().isOnBoardsPage()) {
             app.getBoard().click(By.cssSelector("[href$=boards]"));
         }
+    }
 
 
 
         @Test(enabled = false)
-        public void testBoardCreation() {
+        public void testBoardCreation(){
             int before = app.getBoard().getBoardsCount();
             app.getBoard().initBoardCreation();
             app.getBoard().fillBoardForm(

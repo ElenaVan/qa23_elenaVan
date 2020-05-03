@@ -80,7 +80,7 @@ public class BoardHelper extends HelperBase {
     public void createBoard() {
         initBoardCreation();
         fillBoardForm(new Board()
-        withName("Test")
+        .withName("Test")
         .withTeam("No team"));
 
         confirmBoardCreation();
@@ -104,7 +104,7 @@ public void changeName() {
 //    //click on name
         wd.findElement(By.cssSelector(".js-rename-board")).click();
 //    //type text and enter
-        wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("ggg" + Keys.ENTER);
+    wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("ggg" + Keys.ENTER);
         //type(By.cssSelector(".js-rename-board"), "ggg"+ Keys.ENTER);
 
     }
